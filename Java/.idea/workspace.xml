@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f36836-4f99-47c2-adee-61f7f5239c51" name="Default Changelist" comment="" />
+    <list default="true" id="b5f36836-4f99-47c2-adee-61f7f5239c51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/BurningTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Cinders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/EmptyGround.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestComponentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/GrowingTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestComponent.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +22,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ThYWBaJ7zBJByxcrnbIMXQ39FU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -60,10 +78,22 @@
       <option name="presentableId" value="Default" />
       <updated>1573913823635</updated>
       <workItem from="1573913827121" duration="1050000" />
+      <workItem from="1573915612124" duration="1086000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

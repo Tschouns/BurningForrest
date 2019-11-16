@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Forrest {
-    private final List<List<ForrestField>> forrestFieldRows = new ArrayList<List<ForrestField>>();
+    private final List<List<ForrestComponent>> forrestFieldRows = new ArrayList<List<ForrestComponent>>();
     private int width;
     private int height;
 
@@ -13,9 +13,9 @@ public class Forrest {
         this.height = height;
 
         for (int y = 0; y < height; y++) {
-            var newRow = new ArrayList<ForrestField>();
+            var newRow = new ArrayList<ForrestComponent>();
             for (int x = 0; x < width; x++) {
-                newRow.add(new ForrestField());
+                newRow.add(new EmptyGround());
             }
 
             this.forrestFieldRows.add(newRow);

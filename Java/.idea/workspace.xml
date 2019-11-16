@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f36836-4f99-47c2-adee-61f7f5239c51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ChancePerSecond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/FrameFieldRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/FrameFieldRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/BurningTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/BurningTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/EmptyGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/EmptyGround.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/GrowingTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/GrowingTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573913823635</updated>
       <workItem from="1573913827121" duration="1050000" />
-      <workItem from="1573915612124" duration="16639000" />
+      <workItem from="1573915612124" duration="17125000" />
     </task>
     <servers />
   </component>

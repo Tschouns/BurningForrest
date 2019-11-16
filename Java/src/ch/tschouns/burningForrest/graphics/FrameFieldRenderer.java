@@ -40,7 +40,8 @@ public class FrameFieldRenderer implements ComponentRenderer {
 
     @Override
     public void drawFlames(float sizePercent) {
-
+        graphics.setColor(Color.red);
+        graphics.fillOval(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
     }
 
     @Override

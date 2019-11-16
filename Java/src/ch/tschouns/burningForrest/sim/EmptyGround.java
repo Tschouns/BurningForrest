@@ -3,8 +3,8 @@ package ch.tschouns.burningForrest.sim;
 import ch.tschouns.burningForrest.render.ComponentRenderer;
 
 public class EmptyGround implements ForrestComponent {
+    private final ChancePerSecond chanceToSpawnTree = new ChancePerSecond(0.001f);
     private final Field field;
-    private final ChancePerSecond chance = new ChancePerSecond(0.01f);
 
     public EmptyGround(Field field) {
         this.field = field;
@@ -12,8 +12,8 @@ public class EmptyGround implements ForrestComponent {
 
     @Override
     public void update(int millisecondsElapsed) {
-        if (this.chance.check(millisecondsElapsed)) {
-            this.field.setNewForrestObject(new GrowingTree(0.1f));
+        if (this.chanceToSpawnTree.check(millisecondsElapsed)) {
+            this.field.setNewForrestObject(new GrowingTree(this.field, 0.01f));
         }
     }
 

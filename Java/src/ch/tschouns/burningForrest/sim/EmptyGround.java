@@ -4,12 +4,12 @@ import ch.tschouns.burningForrest.render.ComponentRenderer;
 
 public class EmptyGround implements ForrestComponent {
     @Override
-    public void Update(int millisecondsElapsed) {
+    public void update(int millisecondsElapsed) {
         // Don't do anything.
     }
 
     @Override
-    public void Render(ComponentRenderer renderer) {
+    public void render(ComponentRenderer renderer) {
         // Don't do anything.
     }
 }

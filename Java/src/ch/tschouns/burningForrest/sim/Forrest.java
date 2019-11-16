@@ -34,11 +34,11 @@ public class Forrest {
         return this.forrestFieldRows.get(y).get(x);
     }
 
-    public void UpdateAllComponents(int millisecondsElapsed)
+    public void updateAllComponents(int millisecondsElapsed)
     {
         for (List<ForrestField> row : this.forrestFieldRows) {
             for (ForrestComponent component : row) {
-                component.Update(millisecondsElapsed);
+                component.update(millisecondsElapsed);
             }
         }
     }

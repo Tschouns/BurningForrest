@@ -33,12 +33,12 @@ public class ForrestField implements Field, ForrestComponent {
     }
 
     @Override
-    public void Update(int millisecondsElapsed) {
-        this.forrestObject.Update(millisecondsElapsed);
+    public void update(int millisecondsElapsed) {
+        this.forrestObject.update(millisecondsElapsed);
     }
 
     @Override
-    public void Render(ComponentRenderer renderer) {
-        this.forrestObject.Render(renderer);
+    public void render(ComponentRenderer renderer) {
+        this.forrestObject.render(renderer);
     }
 }

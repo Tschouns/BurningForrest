@@ -11,13 +11,13 @@ public class GrowingTree implements ForrestComponent {
     }
 
     @Override
-    public void Update(int millisecondsElapsed) {
+    public void update(int millisecondsElapsed) {
         this.currentSize += this.growingSpeed * millisecondsElapsed;
         this.currentSize = Math.max(this.currentSize, 100);
     }
 
     @Override
-    public void Render(ComponentRenderer renderer) {
+    public void render(ComponentRenderer renderer) {
         renderer.DrawTree(this.currentSize);
     }
 }

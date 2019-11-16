@@ -4,30 +4,42 @@ import ch.tschouns.burningForrest.sim.Forrest;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ForrestFrame extends JFrame {
+public class ForrestFrame extends JFrame implements ActionListener {
     private final int paddingX = 40;
     private final int paddingY = 40;
+    private final Timer timer = new Timer(20, this);
     private final Forrest forrest;
+
+    private long previousTime = 0;
 
     public ForrestFrame(Forrest forrest) {
         this.forrest = forrest;
     }
 
     public void RunSim() {
-        var previousTime = System.currentTimeMillis();
-        while (true) {
-            // Calculate time elapsed
-            var currentTime = System.currentTimeMillis();
-            var millisecondsElapsed = (int)(currentTime - previousTime);
-            previousTime = currentTime;
+        this.previousTime = System.currentTimeMillis();
+        this.timer.start();
+    }
 
-            // Update
-            forrest.UpdateAllComponents(millisecondsElapsed);
+    @Override
+    public void actionPerformed(ActionEvent actionEvent) {
+        this.update();
+    }
 
-            // Draw
+    public void update() {
+        // Calculate time elapsed
+        var currentTime = System.currentTimeMillis();
+        var millisecondsElapsed = (int)(currentTime - this.previousTime);
+        this.previousTime = currentTime;
 
-        }
+        // Update
+        forrest.updateAllComponents(millisecondsElapsed);
+
+        // Draw
+        this.repaint();
     }
 
     @Override
@@ -48,7 +60,7 @@ public class ForrestFrame extends JFrame {
                 var renderer = new FrameFieldRenderer(graphics, fieldPosX, fieldPosY, fieldWidth, fieldHeight);
 
                 // Render the current field with it
-                this.forrest.getField(x, y).Render(renderer);
+                this.forrest.getField(x, y).render(renderer);
             }
         }
     }

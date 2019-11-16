@@ -27,6 +27,7 @@ public class ForrestFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         this.update();
+        this.repaint();
     }
 
     public void update() {
@@ -37,15 +38,10 @@ public class ForrestFrame extends JFrame implements ActionListener {
 
         // Update
         forrest.updateAllComponents(millisecondsElapsed);
-
-        // Draw
-        this.repaint();
     }
 
     @Override
     public void paint(Graphics graphics) {
-        super.paint(graphics);
-
         // Calculate the width and height of a single field
         var fieldWidth = (this.getSize().width - (2 * this.paddingX)) / this.forrest.getWidth();
         var fieldHeight = (this.getSize().height - (2 * this.paddingY)) / this.forrest.getHeight();

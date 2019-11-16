@@ -21,22 +21,22 @@ public class FrameFieldRenderer implements ComponentRenderer {
     }
 
     @Override
-    public void DrawGround() {
+    public void drawGround() {
+        graphics.drawRect(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
+    }
+
+    @Override
+    public void drawTree(float sizePercent) {
 
     }
 
     @Override
-    public void DrawTree(float sizePercent) {
+    public void drawFlames(float sizePercent) {
 
     }
 
     @Override
-    public void DrawFlames(float sizePercent) {
-
-    }
-
-    @Override
-    public void DrawCinders(float sizePercent) {
+    public void drawCinders(float sizePercent) {
 
     }
 }

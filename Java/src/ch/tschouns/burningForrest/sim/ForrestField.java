@@ -17,18 +17,22 @@ public class ForrestField implements Field, ForrestComponent {
     }
 
     public int getXCoordinate() {
+
         return this.xCoord;
     }
 
     public int getYCoordinate() {
+
         return this.yCoord;
     }
 
     public ForrestComponent getObject() {
+
         return this.forrestObject;
     }
 
     public void setNewForrestObject(ForrestComponent object) {
+
         this.forrestObject = object;
     }
 
@@ -39,6 +43,7 @@ public class ForrestField implements Field, ForrestComponent {
 
     @Override
     public void render(ComponentRenderer renderer) {
+        renderer.drawGround();
         this.forrestObject.render(renderer);
     }
 }

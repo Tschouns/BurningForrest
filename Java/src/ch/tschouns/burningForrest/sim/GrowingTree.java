@@ -18,6 +18,6 @@ public class GrowingTree implements ForrestComponent {
 
     @Override
     public void render(ComponentRenderer renderer) {
-        renderer.DrawTree(this.currentSize);
+        renderer.drawTree(this.currentSize);
     }
 }

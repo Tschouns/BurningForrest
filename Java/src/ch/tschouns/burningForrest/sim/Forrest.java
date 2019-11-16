@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Forrest {
-    private final List<List<ForrestComponent>> forrestFieldRows = new ArrayList<List<ForrestComponent>>();
+    private final List<List<ForrestField>> forrestFieldRows = new ArrayList<List<ForrestField>>();
     private int width;
     private int height;
 
@@ -13,13 +13,21 @@ public class Forrest {
         this.height = height;
 
         for (int y = 0; y < height; y++) {
-            var newRow = new ArrayList<ForrestComponent>();
+            var newRow = new ArrayList<ForrestField>();
             for (int x = 0; x < width; x++) {
-                newRow.add(new EmptyGround());
+                newRow.add(new ForrestField(new EmptyGround()));
             }
 
             this.forrestFieldRows.add(newRow);
         }
     }
 
+    public void UpdateAllComponents(float timeElapsed)
+    {
+        for (List<ForrestField> row : this.forrestFieldRows) {
+            for (ForrestComponent component : row) {
+                component.Update(timeElapsed);
+            }
+        }
+    }
 }

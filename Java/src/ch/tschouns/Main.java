@@ -24,7 +24,7 @@ public class Main {
         var forrest = new Forrest(width, height);
         var frame = new ForrestFrame(forrest);
 
-        frame.setSize(width * 10,height * 10);
+        frame.setSize(width * 10 + 40,height * 10 + 40);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
 

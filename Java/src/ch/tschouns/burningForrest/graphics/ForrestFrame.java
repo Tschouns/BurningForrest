@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ForrestFrame extends JFrame {
-    private final int paddingX = 20;
+    private final int paddingX = 40;
     private final int paddingY = 40;
     private final Forrest forrest;
 
@@ -33,17 +33,18 @@ public class ForrestFrame extends JFrame {
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-        graphics.drawLine(10, 10, 200, 300);
-        graphics.fillRect(20, 40, 300, 500);
+
+        // Calculate the width and height of a single field
+        var fieldWidth = (this.getSize().width - (2 * this.paddingX)) / this.forrest.getWidth();
+        var fieldHeight = (this.getSize().height - (2 * this.paddingY)) / this.forrest.getHeight();
 
         // Render each field
         for (var y = 0; y < forrest.getHeight(); y++) {
             for (var x = 0; x < forrest.getWidth(); x++) {
                 // Create the renderer
-                var fieldWidth = (this.getSize().width - (2 * this.paddingX)) / this.forrest.getWidth();
-                var fieldPosX = fieldWidth * x;
-                var fieldHeight = (this.getSize().height - (2 * this.paddingY)) / this.forrest.getHeight();
-                var fieldPosY =  fieldHeight * y;
+
+                var fieldPosX = (fieldWidth * x) + this.paddingX;
+                var fieldPosY =  (fieldHeight * y) + this.paddingY;
                 var renderer = new FrameFieldRenderer(graphics, fieldPosX, fieldPosY, fieldWidth, fieldHeight);
 
                 // Render the current field with it

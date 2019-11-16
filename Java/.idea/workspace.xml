@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5f36836-4f99-47c2-adee-61f7f5239c51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/FrameFieldRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/tschouns/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/ForrestFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/ForrestFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/EmptyGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/EmptyGround.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/Forrest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/ForrestField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/GrowingTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/tschouns/burningForrest/sim/GrowingTree.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573913823635</updated>
       <workItem from="1573913827121" duration="1050000" />
-      <workItem from="1573915612124" duration="11350000" />
+      <workItem from="1573915612124" duration="11697000" />
     </task>
     <servers />
   </component>
@@ -111,6 +104,11 @@
           <url>file://$PROJECT_DIR$/src/ch/tschouns/Main.java</url>
           <line>28</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ch/tschouns/burningForrest/graphics/ForrestFrame.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -22,12 +22,20 @@ public class FrameFieldRenderer implements ComponentRenderer {
 
     @Override
     public void drawGround() {
-        graphics.drawRect(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
+        graphics.setColor(Color.black);
+        //graphics.drawRect(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
     }
 
     @Override
     public void drawTree(float sizePercent) {
+        var treeHeight = (int)((sizePercent / 100) * this.fieldHeight);
 
+        graphics.setColor(Color.green);
+        graphics.fillRect(
+                this.fieldPosX + (this.fieldWidth / 3),
+                this.fieldPosY + (this.fieldHeight - treeHeight),
+                this.fieldWidth / 3,
+                treeHeight);
     }
 
     @Override

@@ -15,7 +15,10 @@ public class Forrest {
         for (int y = 0; y < height; y++) {
             var newRow = new ArrayList<ForrestField>();
             for (int x = 0; x < width; x++) {
-                newRow.add(new ForrestField(x, y, new EmptyGround()));
+                var newField = new ForrestField(x, y, null);
+                var emptyGround = new EmptyGround(newField);
+                newField.setNewForrestObject(emptyGround);
+                newRow.add(newField);
             }
 
             this.forrestFieldRows.add(newRow);

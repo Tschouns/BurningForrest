@@ -11,8 +11,8 @@ public class GrowingTree implements ForrestComponent {
     }
 
     @Override
-    public void Update(float timeElapsed) {
-        this.currentSize += this.growingSpeed * timeElapsed;
+    public void Update(int millisecondsElapsed) {
+        this.currentSize += this.growingSpeed * millisecondsElapsed;
         this.currentSize = Math.max(this.currentSize, 100);
     }
 

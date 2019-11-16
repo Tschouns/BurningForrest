@@ -2,7 +2,7 @@ package ch.tschouns.burningForrest.sim;
 
 import ch.tschouns.burningForrest.render.ComponentRenderer;
 
-public class ForrestField implements ForrestComponent {
+public class ForrestField implements Field, ForrestComponent {
     private final int xCoord;
     private final int yCoord;
     private ForrestComponent forrestObject;
@@ -16,11 +16,11 @@ public class ForrestField implements ForrestComponent {
         this.forrestObject = objectOnField;
     }
 
-    public int getXCoord() {
+    public int getXCoordinate() {
         return this.xCoord;
     }
 
-    public int getYCoord() {
+    public int getYCoordinate() {
         return this.yCoord;
     }
 
@@ -28,13 +28,13 @@ public class ForrestField implements ForrestComponent {
         return this.forrestObject;
     }
 
-    public void setObject(ForrestComponent object) {
+    public void setNewForrestObject(ForrestComponent object) {
         this.forrestObject = object;
     }
 
     @Override
-    public void Update(float timeElapsed) {
-        this.forrestObject.Update(timeElapsed);
+    public void Update(int millisecondsElapsed) {
+        this.forrestObject.Update(millisecondsElapsed);
     }
 
     @Override

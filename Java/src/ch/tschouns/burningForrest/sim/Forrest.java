@@ -22,11 +22,23 @@ public class Forrest {
         }
     }
 
-    public void UpdateAllComponents(float timeElapsed)
+    public int getWidth() {
+        return this.width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public ForrestComponent getField(int x, int y) {
+        return this.forrestFieldRows.get(y).get(x);
+    }
+
+    public void UpdateAllComponents(int millisecondsElapsed)
     {
         for (List<ForrestField> row : this.forrestFieldRows) {
             for (ForrestComponent component : row) {
-                component.Update(timeElapsed);
+                component.Update(millisecondsElapsed);
             }
         }
     }

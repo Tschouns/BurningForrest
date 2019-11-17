@@ -13,7 +13,7 @@ public class EmptyGround implements ForrestComponent {
     @Override
     public void update(int millisecondsElapsed) {
         if (this.chanceToSpawnTree.check(millisecondsElapsed)) {
-            this.field.setNewForrestObject(new GrowingTree(this.field, 0.01f));
+            this.field.setNewForrestObject(new GrowingTree(this.field));
         }
     }
 

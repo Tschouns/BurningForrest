@@ -22,30 +22,40 @@ public class FrameFieldRenderer implements ComponentRenderer {
 
     @Override
     public void drawGround() {
-        graphics.setColor(Color.black);
-        //graphics.drawRect(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
+        this.graphics.setColor(Color.white);
+        graphics.drawRect(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
     }
 
     @Override
     public void drawTree(float sizePercent) {
-        var treeHeight = (int)((sizePercent / 100) * this.fieldHeight);
-
-        graphics.setColor(Color.green);
-        graphics.fillRect(
-                this.fieldPosX + (this.fieldWidth / 3),
-                this.fieldPosY + (this.fieldHeight - treeHeight),
-                this.fieldWidth / 3,
-                treeHeight);
+        this.graphics.setColor(Color.green);
+        this.DrawTrunk(sizePercent);
     }
 
     @Override
     public void drawFlames(float sizePercent) {
-        graphics.setColor(Color.red);
-        graphics.fillOval(this.fieldPosX, this.fieldPosY, this.fieldWidth, this.fieldHeight);
+        var flameHeight = (int)((sizePercent / 100) * this.fieldHeight);
+
+        this.graphics.setColor(Color.red);
+        this.graphics.fillOval(
+                this.fieldPosX / 4,
+                this.fieldPosY + (fieldHeight - flameHeight),
+                this.fieldWidth / 2,
+                flameHeight);
     }
 
     @Override
     public void drawCinders(float sizePercent) {
+        this.graphics.setColor(Color.black);
+        this.DrawTrunk(sizePercent);
+    }
 
+    private void DrawTrunk(float sizePercent) {
+        var trunkHeight = (int)((sizePercent / 100) * this.fieldHeight);
+        this.graphics.fillRect(
+                this.fieldPosX + (this.fieldWidth / 3),
+                this.fieldPosY + (this.fieldHeight - trunkHeight),
+                this.fieldWidth / 3,
+                trunkHeight);
     }
 }
